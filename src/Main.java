@@ -6,16 +6,16 @@ public class Main {
         int summ = 1000000;
         double percent = 9.99;
         int year = 12;
-        int pay = (int) service.calculate(summ,percent,year);
+        double pay = (double) service.calculate(summ,percent,year);
         System.out.println("При сроке кридита в 12 месяцев, платеж - "+pay);
 
         year = 24;
-        pay = (int) service.calculate(summ,percent,year);
-        System.out.println("При сроке кридита в 12 месяцев, платеж - "+pay);
+        pay = (double) service.calculate(summ,percent,year);
+        System.out.println("При сроке кридита в 24 месяцев, платеж - "+pay);
 
         year = 36;
-        pay = (int) service.calculate(summ,percent,year);
-        System.out.println("При сроке кридита в 12 месяцев, платеж - "+pay);
+        pay = (double) service.calculate(summ,percent,year);
+        System.out.println("При сроке кридита в 36 месяцев, платеж - "+pay);
 
 
     }
