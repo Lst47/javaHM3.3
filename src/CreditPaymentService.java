@@ -1,12 +1,7 @@
 public class CreditPaymentService {
-    public double calculate(int a, double b, int c) {
-        //double summPay;
-        //double f;
-        double percentM = b / (100 * 12);
-        //double math = Math.pow(1+percentM,c);
-        // summPay = (percentM*math)/(math-1);
-        //f = summPay * a;
-        double math = a * (percentM / (1 - (Math.pow((1 + percentM), -c))));
+    public double calculate(int summ, double percent, int year) {
+        double percentM = percent / (100 * 12);
+        double math = summ * (percentM / (1 - (Math.pow((1 + percentM), -year))));
         return math;
     }
 }
